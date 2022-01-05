@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="dashboard.iot.bku.MainActivity">
+
+    <TextView
+        android:id="@+id/city"
+        android:text="CITY"
+
+
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="43%"
+        app:layout_marginTopPercent="20%"
+
+
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center"
+
+
+        />
+
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:text="35°C"
+
+
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="20%"
+        />
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:text="70%"
+
+
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="70%"
+        app:layout_marginTopPercent="20%"
+        />
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="80%"
+
+        android:background="@drawable/toggle_selector"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+    <TextView
+        android:text="LED"
+
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="8%"
+        app:layout_marginTopPercent="70%"
+
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:src = "@drawable/logo"
+        android:scaleType="fitXY"
+
+        app:layout_widthPercent="25%"
+        app:layout_heightPercent="15%"
+        app:layout_marginStartPercent="38%"
+        app:layout_marginTopPercent="5%"
+        />
+
+    <ImageView
+        android:src="@drawable/temperature"
+        android:scaleType="fitXY"
+
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="6%"
+        app:layout_marginTopPercent="6%"
+        />
+
+    <ImageView
+        android:src="@drawable/humidity"
+        android:scaleType="fitXY"
+
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="72%"
+        app:layout_marginTopPercent="6%"
+        />
+    <TextView
+        android:text="Temp"
+
+
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:gravity="center"
+
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="3%"
+        app:layout_marginTopPercent="15%"
+        />
+
+    <TextView
+        android:text="Humi"
+
+
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:gravity="center"
+
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="68%"
+        app:layout_marginTopPercent="15%"
+        />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/idGraphViewTemp"
+
+
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="30%"
+        app:layout_marginStartPercent="40%"
+        app:layout_marginTopPercent="30%"
+
+        />
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/idGraphViewHumi"
+
+
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="30%"
+        app:layout_marginStartPercent="40%"
+        app:layout_marginTopPercent="65%"
+
+        />
+
+
+
+
+</android.support.percent.PercentRelativeLayout>
